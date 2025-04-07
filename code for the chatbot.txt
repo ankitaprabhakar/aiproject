@@ -1,0 +1,80 @@
+code for the chatbot 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FitLife - Your Fitness Buddy</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f4f7f6;
+    }
+    header {
+      background-color: #3d1be7;
+      color: white;
+      text-align: center;
+      padding: 1.5rem 0;
+    }
+    section {
+      padding: 2rem;
+    }
+    .section-title {
+      font-size: 24px;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+    .bot-info {
+      background-color: #ecf9f1;
+      padding: 1rem;
+      border-left: 5px solid #005b26;
+      margin-top: 2rem;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>FitLife</h1>
+    <p>Your Daily Dose of Fitness and Nutrition</p>
+  </header>
+
+  <section>
+    <div class="section-title">🏋️ Fitness Tips</div>
+    <p>Stay active, stretch daily, follow a consistent workout routine, and never skip your warm-up!</p>
+  </section>
+
+  <section>
+    <div class="section-title">🥗 Healthy Diet</div>
+    <p>Eat a balanced diet rich in proteins, fiber, and healthy fats. Drink plenty of water and limit processed foods.</p>
+  </section>
+
+  <section class="bot-info">
+    <div class="section-title">🤖 Meet Your Fitness Bot</div>
+    <p>Ask me anything about workouts, diets, or your fitness journey!</p>
+  </section>
+
+  <script type="text/javascript">
+    (function(d, t) {
+        var v = d.createElement(t), s = d.getElementsByTagName(t)[0];
+        v.onload = function() {
+          window.voiceflow.chat.load({
+            verify: { projectID: '67f2da1d5d3e39ae640dc4a2' },
+            url: 'https://general-runtime.voiceflow.com',
+            versionID: 'production',
+            voice: {
+              url: "https://runtime-api.voiceflow.com"
+            }
+          });
+        }
+        v.src = "https://cdn.voiceflow.com/widget-next/bundle.mjs"; v.type = "text/javascript"; s.parentNode.insertBefore(v, s);
+    })(document, 'script');
+  </script>
+
+</body>
+</html>
